@@ -873,8 +873,10 @@ vendor/lib/libQtiTether.so
 # Perf
 bin/energy-awareness
 bin/iop
+framework/QPerformance.jar
 bin/msm_irqbalance
 vendor/bin/perfd
+vendor/etc/public.libraries.txt
 vendor/etc/msm_irqbalance.conf
 vendor/lib/libqti-at.so
 vendor/lib/libqti-iop.so
@@ -883,6 +885,7 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti_performance.so
 vendor/lib/libqti-wl.so
 vendor/lib64/libqti-at.so
+vendor/lib64/libqti-gt.so
 vendor/lib64/libqti-iop.so
 vendor/lib64/libqti-iop-client.so
 vendor/lib64/libqti-perfd-client.so
