@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/mido
+LOCAL_PATH := device/xiaomi/tissot
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -31,6 +31,7 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Platform
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
@@ -43,7 +44,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CONFIG := mido_defconfig
+TARGET_KERNEL_CONFIG := tissot_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 
 # ANT
@@ -112,8 +113,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
-    device/xiaomi/mido/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+    device/xiaomi/tissot/cmhw
 
 # CNE / DPM
 BOARD_USES_QCNE := true
@@ -161,9 +161,9 @@ TARGET_NO_RPC := true
 TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(LOCAL_PATH)/android_filesystem_config.h
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_mido
+TARGET_INIT_VENDOR_LIB := libinit_tissot
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
+TARGET_RECOVERY_DEVICE_MODULES := libinit_tissot
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -175,7 +175,7 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087438848
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -221,4 +221,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/xiaomi/tissot/BoardConfigVendor.mk
