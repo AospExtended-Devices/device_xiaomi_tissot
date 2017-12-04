@@ -22,3 +22,5 @@
 
 # Data files
 /data/misc/netmgr/log\.txt			u:object_r:netmgrd_data_file:s0
+
+/firmware                  u:object_r:firmware_file:s0
