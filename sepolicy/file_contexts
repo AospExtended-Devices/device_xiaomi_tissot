@@ -50,6 +50,7 @@
 /dev/block/platform/soc/7824900.sdhci/by-name/tzbak	u:object_r:bootloader_block_device:s0
 /dev/block/platform/soc/7824900.sdhci/by-name/tz	u:object_r:bootloader_block_device:s0
 /dev/block/platform/soc/7824900.sdhci/by-name/userdata	u:object_r:userdata_block_device:s0
+/dev/block/mmcblk0p22                                   u:object_r:boot_block_device:s0
 
 # MaxDSM
 /dev/dsm_ctrl_dev	u:object_r:smartpa_device:s0
@@ -84,3 +85,6 @@
 /system/bin/resize2fs	u:object_r:resize2fs_exec:s0
 
 /system/vendor/bin/RIDLClient.exe	u:object_r:RIDL_exec:s0
+
+/system/etc/init.qcom.bt.sh       u:object_r:bluetooth_loader_exec:s0
+

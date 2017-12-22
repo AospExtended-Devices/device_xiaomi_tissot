@@ -1,2 +1,0 @@
-allow untrusted_app kernel:system { syslog_read };
-
