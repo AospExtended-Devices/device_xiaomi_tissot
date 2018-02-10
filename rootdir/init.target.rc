@@ -236,6 +236,9 @@ on boot
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
     
+    class_start core
+    setprop ro.hardware goodix
+    
  # add for fpc 
     chown system system /sys/devices/soc/soc:fpc1020/compatible_all
     chmod 0664 /sys/devices/soc/soc:fpc1020/compatible_all
@@ -260,7 +263,7 @@ on boot
     chown system system  /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
 
-service gx_fpd /system/bin/gx_fpd
+service goodixfingerprintd /system/bin/goodixfingerprintd
     class late_start
     user system
     group system
@@ -268,7 +271,7 @@ service gx_fpd /system/bin/gx_fpd
     writepid /dev/cpuset/system-background/tasks
 
 on property:persist.sys.fp.goodix=0
-    stop gx_fpd
+    stop goodixfingerprintd
 
 on property:persist.sys.fp.goodix=1
-    start gx_fpd
+    start goodixfingerprintd
