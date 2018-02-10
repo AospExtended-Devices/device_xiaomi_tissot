@@ -227,5 +227,8 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WIFI_DRIVER_MODULE_NAME := "wlan"
 
+# Disable HW based full disk encryption
+TARGET_HW_DISK_ENCRYPTION := false
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
