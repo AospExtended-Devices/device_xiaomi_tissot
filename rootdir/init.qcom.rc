@@ -616,7 +616,7 @@ service goodixfpd /system/bin/goodixfingerprintd
     class late_start
     user root
     group system  sdcard_rw
-    seclabel u:r:gx_fpd:s0
+    seclabel u:r:goodixfpd:s0
 
 on property:sys.fp.goodix=0
    stop goodixfpd
