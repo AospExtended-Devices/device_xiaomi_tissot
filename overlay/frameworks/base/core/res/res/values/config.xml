@@ -390,7 +390,7 @@
     <integer name="config_screenBrightnessDoze">17</integer>
     
     <!-- Whether the always on display mode is available. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+<!--    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool> -->
 
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
