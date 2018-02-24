@@ -615,15 +615,13 @@ service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
 service goodixfpd /system/bin/goodixfingerprintd
     class late_start
     user root
-    group system  sdcard_rw
-    seclabel u:r:goodixfpd:s0
+    group system  
 
 on property:sys.fp.goodix=0
    stop goodixfpd
 
 on property:sys.fp.vendor=goodix
    setprop ro.boot.fpsensor goodix
-   start goodixfpd
 
 on property:sys.fp.vendor=FPC
    setprop ro.boot.fpsensor fpc
@@ -633,7 +631,6 @@ service fingerprintd /system/bin/fingerprintd
     user system
     group system sdcard_rw
 	system system
-	seclabel u:r:fingerprintd:s0
 	writepid /dev/cpuset/system-background/tasks
 
 on charger
