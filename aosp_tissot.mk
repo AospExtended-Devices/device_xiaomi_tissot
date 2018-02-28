@@ -16,8 +16,8 @@
 
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -47,7 +47,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     librecovery_updater_msm8953 \
     libsparse_static
 
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := aosp_tissot
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
