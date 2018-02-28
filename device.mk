@@ -30,9 +30,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+#Bootanimation res
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Update engine
 PRODUCT_PACKAGES += brillo_update_payload
