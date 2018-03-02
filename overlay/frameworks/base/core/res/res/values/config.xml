@@ -473,4 +473,9 @@
     <!-- Configuration to support SIM contact batch operation -->
     <bool name="config_sim_phonebook_batch_operation">false</bool>
 
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
 </resources>
+
