@@ -17,9 +17,9 @@
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/lluvia/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_tissot
+PRODUCT_NAME := lluvia_tissot
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
