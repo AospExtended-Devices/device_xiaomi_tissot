@@ -44,3 +44,8 @@ BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:u
 # Use Gcam and Jelly
 TARGET_USE_GCAM := true
 TARGET_USE_JELLY := true
+
+# Use Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
