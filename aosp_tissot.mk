@@ -45,7 +45,11 @@ BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:u
 TARGET_USE_GCAM := true
 TARGET_USE_JELLY := true
 
+# Set this flag in build script
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+endif
