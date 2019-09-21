@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
 # Use Gcam and Jelly
-TARGET_USE_GCAM := true
+TARGET_USE_GCAM := false
 TARGET_USE_JELLY := true
 
 # Set this flag in build script
