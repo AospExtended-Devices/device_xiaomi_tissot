@@ -45,7 +45,7 @@ VENDOR_SECURITY_PATCH := 2019-05-05
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Twrp
--include device/twrp/tissot/twrp.mk
+-include $(DEVICE_PATH)/twrp/twrp.mk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
