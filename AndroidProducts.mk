@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_tissot.mk
+    $(LOCAL_DIR)/derp_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    derp_tissot-user \
+    derp_tissot-userdebug \
+    derp_tissot-eng \
