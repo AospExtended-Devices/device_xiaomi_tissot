@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- LockScreenCharger current sysfs path -->
+    <string name="config_currentPath">/sys/class/power_supply/battery/current_now</string>
+
+    <!-- LockScreenCharger voltage sysfs path -->
+    <string name="config_voltagePath">/sys/class/power_supply/battery/voltage_now</string>
+
+    <!-- LockScreenCharger current inversion -->
+    <bool name="showInvertedCurrent">true</bool>
+
+</resources>
+
