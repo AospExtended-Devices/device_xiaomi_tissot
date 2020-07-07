@@ -26,6 +26,9 @@
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
 
+    <!-- Is the MultiColor LED Is Supported -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
     <!-- Enable dual LTE capability support-->
     <bool name="config_dual_LTE_capability">true</bool>
 
