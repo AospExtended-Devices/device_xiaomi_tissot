@@ -11,5 +11,11 @@
     <!-- LockScreenCharger current inversion -->
     <bool name="showInvertedCurrent">true</bool>
 
+     <!-- The battery voltage divider, if needed -->
+     <integer name="config_battVoltageDivider" translatable="false">1000</integer>
+
+     <!-- The battery current divider, if needed -->
+     <integer name="config_battCurrentDivider" translatable="false">1000</integer>
+
 </resources>
 
